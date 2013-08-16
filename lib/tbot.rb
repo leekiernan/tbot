@@ -7,5 +7,12 @@ module Tbot
   @@api_key = nil
   # Your code goes here...
   #
+
+  require 'tbot/config'
+  require 'tbot/follow'
+  require 'tbot/search'
+  require 'tbot/reply'
+
+  require 'tbot/bot'
 end
 
