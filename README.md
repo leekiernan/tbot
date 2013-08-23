@@ -18,11 +18,8 @@ Or install it yourself as:
 ## === TODO ===
 ## Usage
 
-This gem allows you to specify request and response data for Twitter.
+Fairly thin layer for adding search and recursive search functionality to Twitter's API.
 
-Pass in a hash or yaml file of what should be searched for, and how to handle the response.
-
-If reply is required, you can add custom model callbacks which allow you to specify your own methods for retreiving relevant URLS
 
 Twitter::SavedSearches.saved_search_create(q, {})
 
@@ -31,18 +28,6 @@ res.refresh_url
  => {:since_id=>"369135341543763969", :q=>"bieber", :geocode=>"51.561065,-1.779442,15mi", :include_entities=>"1"}
 -> client.search res.refresh_url[:q], res.refresh_url
 ^^^ Store this. res.refresh_url
-
-INIT SOMETHING LIKE THIS
-term:
-  location:
-    - sn2
-    - Swindon
-    - geocode
-  replies:
-    - one
-    - two
-  add_url: Model.function
-  callback: Model.function
 
 
 
