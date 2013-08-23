@@ -1,5 +1,6 @@
 module Tbot
-  module Search
+  # module Search
+  class Bot
     # Clean up options, pass to Twitter search function and yield results for block handling.
     def search(q, opts = {})
       format_opts opts
@@ -41,4 +42,5 @@ module Tbot
       @thread = nil
     end
   end
+  # end
 end

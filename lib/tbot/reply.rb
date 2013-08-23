@@ -1,5 +1,6 @@
 module Tbot
-  module Reply
+  # module Reply
+  class Bot
     def reply(tweet, response = "")
       screen_name = tweet.user.screen_name
 
@@ -12,5 +13,7 @@ module Tbot
         @@client.update "@#{screen_name} #{response}", { :in_reply_to_status_id => tweet.id }
       end
     end
+
   end
+  # end
 end

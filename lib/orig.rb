@@ -1,15 +1,6 @@
 =begin
   require 'twitter'
 
-  require "tbot/version"
-
-  require 'tbot/config'
-  require 'tbot/follow'
-  require 'tbot/search'
-  require 'tbot/reply'
-
-  require 'tbot/bot'
-
   module Tbot
     TWITTER_BASE = ""
     API_CREDENTIALS = {

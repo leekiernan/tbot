@@ -1,5 +1,6 @@
 module Tbot
   class Bot
+    @@client = nil
 
     # DRY: Ensure correct data is passed to search, set instance variables as required.
     def format_opts(opts)
@@ -14,5 +15,14 @@ module Tbot
         opts[:geocode] = "#{geo},#{radius}mi"
       end
     end
+
+    # Instance methods.
+    def initialize
+      raise NoClientError unless @@client
+      @last_id = nil
+
+      @@client
+    end
+
   end
 end
