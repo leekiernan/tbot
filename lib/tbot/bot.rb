@@ -6,6 +6,7 @@ module Tbot
     def format_opts(opts)
       if opts[:delay]
         @delay = opts.delete(:delay)
+        # Minimum 60 seconds.
         @delay = (@delay < 60) ? 60 : @delay
       end
 
