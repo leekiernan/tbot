@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Tbot::VERSION
   spec.authors       = ["Lee Kiernan"]
   spec.email         = ["lee.kiernan@gmail.com"]
-  spec.description   = %q{This is a description}
-  spec.summary       = %q{Summar}
+  spec.description   = %q{Slimline Twitter script for use in recurring search and responses.}
+  spec.summary       = %q{Slimline Twitter script for use in recurring search and responses.}
   spec.homepage      = "http://www.leekiernan.co.uk/"
   spec.license       = "Whatever."
 
